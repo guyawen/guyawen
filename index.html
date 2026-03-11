@@ -764,7 +764,7 @@
         } */
         .cover-img {
             width: auto;
-            height: 150;
+            height: 120%;
         }
     </style>
 </head>
@@ -892,7 +892,7 @@
             <div class="video-container" id="videoContainer">
                 <!-- <video id="showcaseVideo" loop playsinline poster="https://placehold.co/1280x720/1a1a2f/9a8cff?text=点击播放+3D演示"> -->
                 <video id="showcaseVideo" loop playsinline controls>
-                    <source src="http://47.100.56.45/orangeGames/works/video.mp4" type="video/mp4">
+                    <source src="./video.mp4" type="video/mp4">
                     您的浏览器不支持 video 标签。
                 </video>
                 <!-- <div class="custom-play-btn" id="playButton">
@@ -944,8 +944,8 @@
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <p><a href="http://linkedin.com/in/yawen-gu" target="_blank" style="text-decoration: none;">linkedin.com/in/yawen-gu</a></p>
-                    <a href="http://linkedin.com/in/yawen-gu" target="_blank" class="contact-link">跳转</a>
+                    <p><a href="https://www.linkedin.com/in/yawen-gu-308619379/" target="_blank" style="text-decoration: none;">linkedin.com/in/yawen-gu</a></p>
+                    <a href="https://www.linkedin.com/in/yawen-gu-308619379/" target="_blank" class="contact-link">跳转</a>
                 </div>
             </div>
         </section>
@@ -972,10 +972,10 @@
                 name: '原型—设计稿',
                 fullDescription: '主导设计了游戏内大部分玩法功能的界面及大地图交互，满足不同玩家的需求。',
                 prototypes: [
-                    { title: 'PVE玩法', desc: '（点击查看完整动图）', icon: 'fa-boxes', color: '#8875ff', imgUrl: './img/pro1.gif', coverImg: './img/cover1.jpg' },
-                    { title: 'PVP玩法', desc: '（点击查看完整动图）', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './img/pro2.gif', coverImg: './img/cover2.jpg' },
-                    { title: '英雄养成系统', desc: '（点击查看完整动图）', icon: 'fa-bolt', color: '#c37df2', imgUrl: './img/pro3.gif', coverImg: './img/cover3.jpg' },
-                    { title: '大地图功能', desc: '（点击查看完整动图）', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './img/pro4.gif', coverImg: './img/cover4.png' }
+                    { title: 'PVE玩法', desc: '（点击查看完整图片）', icon: 'fa-boxes', color: '#8875ff', imgUrl: './img/pro1.gif', coverImg: './img/cover1.jpg' },
+                    { title: 'PVP玩法', desc: '（点击查看完整图片）', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './img/pro2.gif', coverImg: './img/cover2.jpg' },
+                    { title: '英雄养成系统', desc: '（点击查看完整图片）', icon: 'fa-bolt', color: '#c37df2', imgUrl: './img/pro3.gif', coverImg: './img/cover3.jpg' },
+                    { title: '大地图功能', desc: '（点击查看完整图片）', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './img/pro4.gif', coverImg: './img/cover4.png' }
                 ]
             },
             p2: {
@@ -996,7 +996,7 @@
                     { title: '拖拽/双击移动卡牌', desc: '设计了”拖拽“和”双击“两种操作方式。新增的双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。<br />拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: './img/dtcg1.png', coverImg: './img/dtcg-cover1.png' },
                     { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了', icon: 'fa-cubes', color: '#fea789', imgUrl: './img/dtcg2.gif', coverImg: './img/dtcg-cover2.png' },
                     { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负；但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止；后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: './img/dtcg3.gif', coverImg: './img/dtcg-cover3.png' },
-                    { title: '交互合集', desc: '（点击查看完整动图）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: './img/dtcg4.gif', coverImg: './img/dtcg-cover4.png' },
+                    { title: '交互合集', desc: '（点击查看完整图片）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: './img/dtcg4.gif', coverImg: './img/dtcg-cover4.png' },
                 ]
             },
             p4: {
@@ -1005,7 +1005,7 @@
                 prototypes: [
                     { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式；后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式', icon: 'fa-eye', color: '#fc8c92', imgUrl: './img/jiemian1.png', coverImg: './img/jiemian1.png' },
                     { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景；新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本：1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。2.新版将敌我双方桌面改为镜像，使场景布局更整洁。3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感', icon: 'fa-burst', color: '#ff8b5e', imgUrl: './img/jiemian2.png', coverImg: './img/jiemian2.png' },
-                    { title: '界面合集', desc: '（点击查看完整动图）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: './img/jiemian3.gif', coverImg: './img/jiemian-cover3.png' },
+                    { title: '界面合集', desc: '（点击查看完整图片）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: './img/jiemian3.gif', coverImg: './img/jiemian-cover3.png' },
                 ]
             },
             p5: {
@@ -1086,12 +1086,12 @@
 
                 // 构建滑动图片区域
                 let slidesHtml = '';
-                data.prototypes.forEach(p => {
+                data.prototypes.forEach((p) => {
                     // 将p对象转为字符串属性，注意引号转义
                     slidesHtml += `
                         <div class="swiper-slide" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&apos;")})'>
                             <div class="slide-img" style="background: ${p.color};">
-                                <img src="${p.coverImg}" class="pro-img cover-img" />
+                                <img src="${p.coverImg}" class="pro-img cover-img" style="height: ${groupId === 'p1' ? '150%' : '120%'}" />
                             </div>
                             <span>${p.title}</span>
                             <p>${p.desc}</p>
