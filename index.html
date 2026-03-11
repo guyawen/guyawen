@@ -757,10 +757,14 @@
             left: 0;
             top: 0;
         }
-        .pro-img {
+        /* .pro-img {
             width: 300%;
             height: 100%;
             margin-left: -90%;
+        } */
+        .cover-img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -794,7 +798,7 @@
             <div class="hero-avatar">
                 <div class="avatar-frame">
                     <!-- <i class="fas fa-dragon home-dragon"></i> -->
-                    <img src="./avatar.jpg" class="home-avatar" />
+                    <img src="./img/avatar.jpg" class="home-avatar" />
                     <!-- <div class="home-avatar-bg"></div> -->
                 </div>
             </div>
@@ -968,20 +972,20 @@
                 name: '原型—设计稿',
                 fullDescription: '主导设计了游戏内大部分玩法功能的界面及大地图交互，满足不同玩家的需求。',
                 prototypes: [
-                    { title: 'PVE玩法', desc: '（点击查看完整动图）', icon: 'fa-boxes', color: '#8875ff', imgUrl: './pro1.gif' },
-                    { title: 'PVP玩法', desc: '（点击查看完整动图）', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './pro2.gif' },
-                    { title: '英雄养成系统', desc: '（点击查看完整动图）', icon: 'fa-bolt', color: '#c37df2', imgUrl: './pro3.gif' },
-                    { title: '大地图功能', desc: '（点击查看完整动图）', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './pro4.gif' }
+                    { title: 'PVE玩法', desc: '（点击查看完整动图）', icon: 'fa-boxes', color: '#8875ff', imgUrl: './img/pro1.gif', coverImg: './img/cover1.jpg' },
+                    { title: 'PVP玩法', desc: '（点击查看完整动图）', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './img/pro2.gif', coverImg: './img/cover2.jpg' },
+                    { title: '英雄养成系统', desc: '（点击查看完整动图）', icon: 'fa-bolt', color: '#c37df2', imgUrl: './img/pro3.gif', coverImg: './img/cover3.jpg' },
+                    { title: '大地图功能', desc: '（点击查看完整动图）', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './img/pro4.gif', coverImg: './img/cover4.png' }
                 ]
             },
             p2: {
                 name: '勇士竞技场',
                 fullDescription: '重制对话轮盘UI。新的情感高亮和立场标记让玩家快速理解NPC倾向，配合手柄优化径向菜单。',
                 prototypes: [
-                    { title: '对话轮盘', desc: '情绪色环+快捷短语', icon: 'fa-comment-dots', color: '#3b9eff', imgUrl: 'https://placehold.co/600x800/3b9eff/ffffff?text=对话轮盘' },
-                    { title: '关系图谱', desc: '动态NPC关系图', icon: 'fa-share-nodes', color: '#c05aff', imgUrl: 'https://placehold.co/600x800/c05aff/ffffff?text=关系图谱' },
-                    { title: '日志界面', desc: '任务与线索整合', icon: 'fa-book-open', color: '#ffa25b', imgUrl: 'https://placehold.co/600x800/ffa25b/ffffff?text=日志界面' },
-                    { title: '对比界面', desc: '装备数据可视化', icon: 'fa-wave-square', color: '#39c0ba', imgUrl: 'https://placehold.co/600x800/39c0ba/ffffff?text=对比界面' },
+                    { title: '对话轮盘', desc: '情绪色环+快捷短语', icon: 'fa-comment-dots', color: '#3b9eff', imgUrl: './img/dtcg1.png' },
+                    { title: '关系图谱', desc: '动态NPC关系图', icon: 'fa-share-nodes', color: '#c05aff', imgUrl: './img/dtcg2.gif' },
+                    { title: '日志界面', desc: '任务与线索整合', icon: 'fa-book-open', color: '#ffa25b', imgUrl: './img/dtcg3.gif' },
+                    { title: '对比界面', desc: '装备数据可视化', icon: 'fa-wave-square', color: '#39c0ba', imgUrl: './img/dtcg4.gif' },
                 
                 ]
             },
@@ -989,10 +993,10 @@
                 name: '交互优化',
                 fullDescription: '负责游戏内所有系统的交互/动效设计和验收，并不断调优，致力于给玩家提供更好的体验。',
                 prototypes: [
-                    { title: '拖拽/双击移动卡牌', desc: '设计了”拖拽“和”双击“两种操作方式。新增的双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: 'https://placehold.co/600x800/b2aeff/ffffff?text=手势引导' },
-                    { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了', icon: 'fa-cubes', color: '#fea789', imgUrl: 'https://placehold.co/600x800/fea789/ffffff?text=库存整理' },
-                    { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负；但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止；后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: 'https://placehold.co/600x800/9bb9ff/ffffff?text=酒馆视图' },
-                    { title: '交互合集', desc: '（点击查看完整动图）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: 'https://placehold.co/600x800/7ed0b0/ffffff?text=配方界面' },
+                    { title: '拖拽/双击移动卡牌', desc: '设计了”拖拽“和”双击“两种操作方式。新增的双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。<br />拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: './img/dtcg1.png', coverImg: './img/dtcg-cover1.png' },
+                    { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了', icon: 'fa-cubes', color: '#fea789', imgUrl: './img/dtcg2.gif', coverImg: './img/dtcg-cover2.png' },
+                    { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负；但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止；后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: './img/dtcg3.gif', coverImg: './img/dtcg-cover3.png' },
+                    { title: '交互合集', desc: '（点击查看完整动图）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: './img/dtcg4.gif', coverImg: './img/dtcg-cover4.png' },
                 ]
             },
             p4: {
@@ -1086,7 +1090,7 @@
                     slidesHtml += `
                         <div class="swiper-slide" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&apos;")})'>
                             <div class="slide-img" style="background: ${p.color};">
-                                <img src="${p.imgUrl}" class="pro-img" />
+                                <img src="${p.coverImg}" class="pro-img cover-img" />
                             </div>
                             <span>${p.title}</span>
                             <p>${p.desc}</p>
