@@ -812,6 +812,7 @@
                 <div class="card-bg" style="background-image: linear-gradient(135deg, #5b4cb0, #a66dd4), url('https://placehold.co/600x400/6f5fef/ffffff?text=幻想森林');">
                     <span class="bg-label">时光之门</span>
                     <span class="bg-label">勇士竞技场</span>
+                    <span class="bg-label">远征地图</span>
                 </div>
                 <div class="card-content">
                     <h3>代号：军团</h3>   
@@ -833,13 +834,14 @@
                 <div class="card-bg" style="background-image: linear-gradient(145deg, #1a4348, #2e6b72), url('https://placehold.co/600x400/236b6b/ffffff?text=卡牌+经营');">
                     <span class="bg-label">组卡系统</span>
                     <span class="bg-label">养成系统</span>
+                    <span class="bg-label">战斗系统</span>
                 </div>
                 <div class="card-content">
                     <h3>DTCG（Beta封测）</h3>
                     <div class="card-tags">
                         <span class="tag">横屏</span>
-                        <span class="tag">UI页面</span>
-                        <span class="tag">交互设计</span>
+                        <span class="tag">交互优化</span>
+                        <span class="tag">动效设计</span>
                     </div>
                     <div class="card-excerpt">一款日漫IP主题的TCG手游，将传统桌面卡牌玩法移植到手机，成熟的核心玩法和精准的目标用户。</div>
                     <div class="card-footer">
@@ -879,7 +881,7 @@
 
         <!-- ========= 全屏居中视频区域 ========= -->
         <div class="section-title">
-            <h2><i class="fas fa-video" style="color: #6b5bff;"></i> 实机画面合集 </h2>
+            <h2><i class="fas fa-video" style="color: #6b5bff;"></i> 实机画面展示 </h2>
         </div>
 
         <div class="video-showcase">
@@ -938,8 +940,8 @@
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/mengranlin</p>
-                    <a href="#" class="contact-link">连接</a>
+                    <p>linkedin.com/in/yawen-gu</p>
+                    <a href="#" class="contact-link">跳转</a>
                 </div>
             </div>
         </section>
@@ -955,7 +957,7 @@
         </div>
 
         <footer>
-            <p>⚡ UX Play· GYW ⚡</p>
+            <p>⚡ UX PLAY· GYW ⚡</p>
         </footer>
     </div>
 
@@ -963,13 +965,13 @@
         // ================= 原有项目数据 (增强：添加图片URL) =================
         const projectsData = {
             p1: {
-                name: '时光之门',
-                fullDescription: '我主导设计该玩法的所有界面原型及交互，通过简单的交互操作，降低玩家学习成本，以提升新玩家留存。',
+                name: '原型—设计稿',
+                fullDescription: '主导设计了游戏内大部分玩法功能的界面及大地图交互，满足不同玩家的需求。',
                 prototypes: [
-                    { title: '完整页面交互', desc: '点击查看完整界面流程', icon: 'fa-boxes', color: '#8875ff', imgUrl: './pro1.gif' },
-                    { title: '奖励领取提示', desc: '呼吸灯动态反馈效果', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './pro2.gif' },
-                    { title: '快捷使用', desc: '长按/双击快捷操作', icon: 'fa-bolt', color: '#c37df2', imgUrl: './pro3.gif' },
-                    { title: '低保真原型图', desc: '早期线框图与流程', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './pro4.gif' }
+                    { title: 'PVE玩法', desc: '（点击查看完整动图）', icon: 'fa-boxes', color: '#8875ff', imgUrl: './pro1.gif' },
+                    { title: 'PVP玩法', desc: '（点击查看完整动图）', icon: 'fa-weight-hanging', color: '#5d9eff', imgUrl: './pro2.gif' },
+                    { title: '英雄养成系统', desc: '（点击查看完整动图）', icon: 'fa-bolt', color: '#c37df2', imgUrl: './pro3.gif' },
+                    { title: '大地图功能', desc: '（点击查看完整动图）', icon: 'fa-chart-simple', color: '#ff8896', imgUrl: './pro4.gif' }
                 ]
             },
             p2: {
@@ -984,25 +986,22 @@
                 ]
             },
             p3: {
-                name: '组卡系统',
-                fullDescription: '移动端模拟经营，重新设计滑动手势：上滑加速、下滑整理、双击自动填充，以及为左手玩家优化热区。',
+                name: '交互优化',
+                fullDescription: '负责游戏内所有系统的交互/动效设计和验收，并不断调优，致力于给玩家提供更好的体验。',
                 prototypes: [
-                    { title: '手势引导', desc: '动态手势教学', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: 'https://placehold.co/600x800/b2aeff/ffffff?text=手势引导' },
-                    { title: '库存整理', desc: '拖拽合并与滑动', icon: 'fa-cubes', color: '#fea789', imgUrl: 'https://placehold.co/600x800/fea789/ffffff?text=库存整理' },
-                    { title: '酒馆视图', desc: '缩放与焦点切换', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: 'https://placehold.co/600x800/9bb9ff/ffffff?text=酒馆视图' },
-                    { title: '配方界面', desc: '快速调配', icon: 'fa-flask', color: '#7ed0b0', imgUrl: 'https://placehold.co/600x800/7ed0b0/ffffff?text=配方界面' },
-                    { title: '经营报表', desc: '手势滑动切换天数', icon: 'fa-chart-pie', color: '#e2a4ff', imgUrl: 'https://placehold.co/600x800/e2a4ff/ffffff?text=经营报表' },
-                    { title: '设置热区', desc: '可编辑手势区域', icon: 'fa-gear', color: '#c0c0da', imgUrl: 'https://placehold.co/600x800/c0c0da/ffffff?text=设置热区' }
+                    { title: '拖拽/双击移动卡牌', desc: '设计了”拖拽“和”双击“两种操作方式。新增的双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: 'https://placehold.co/600x800/b2aeff/ffffff?text=手势引导' },
+                    { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了', icon: 'fa-cubes', color: '#fea789', imgUrl: 'https://placehold.co/600x800/fea789/ffffff?text=库存整理' },
+                    { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负；但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止；后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: 'https://placehold.co/600x800/9bb9ff/ffffff?text=酒馆视图' },
+                    { title: '交互合集', desc: '（点击查看完整动图）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: 'https://placehold.co/600x800/7ed0b0/ffffff?text=配方界面' },
                 ]
             },
             p4: {
-                name: '养成系统',
-                fullDescription: 'HUD重设：把血条、能量、连击计数整合为环绕人物动态环，同时精简辅助UI，增强对战时注意力。',
+                name: '界面优化',
+                fullDescription: '负责游戏内所有界面的设计和优化，从可用性、易用性和视觉效果等多方面把控最终落地质量。',
                 prototypes: [
-                    { title: 'HUD布局', desc: '动态环绕设计', icon: 'fa-eye', color: '#fc8c92', imgUrl: 'https://placehold.co/600x800/fc8c92/ffffff?text=HUD布局' },
-                    { title: '受击反馈', desc: '屏幕红晕+方向', icon: 'fa-burst', color: '#ff8b5e', imgUrl: 'https://placehold.co/600x800/ff8b5e/ffffff?text=受击反馈' },
-                    { title: '连击计数', desc: '炫彩数字动效', icon: 'fa-fire', color: '#fb6b3e', imgUrl: 'https://placehold.co/600x800/fb6b3e/ffffff?text=连击计数' },
-                    { title: '必杀技槽', desc: '充能分段提示', icon: 'fa-battery-full', color: '#c863e8', imgUrl: 'https://placehold.co/600x800/c863e8/ffffff?text=必杀技槽' }
+                    { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式；后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式', icon: 'fa-eye', color: '#fc8c92', imgUrl: 'https://placehold.co/600x800/fc8c92/ffffff?text=HUD布局' },
+                    { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景；新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本：1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。2.新版将敌我双方桌面改为镜像，使场景布局更整洁。3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感', icon: 'fa-burst', color: '#ff8b5e', imgUrl: 'https://placehold.co/600x800/ff8b5e/ffffff?text=受击反馈' },
+                    { title: '界面合集', desc: '（点击查看完整动图）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: 'https://placehold.co/600x800/fb6b3e/ffffff?text=连击计数' },
                 ]
             },
             p5: {
