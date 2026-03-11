@@ -763,8 +763,8 @@
             margin-left: -90%;
         } */
         .cover-img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 150;
         }
     </style>
 </head>
@@ -944,8 +944,8 @@
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/yawen-gu</p>
-                    <a href="#" class="contact-link">跳转</a>
+                    <p><a href="http://linkedin.com/in/yawen-gu" target="_blank" style="text-decoration: none;">linkedin.com/in/yawen-gu</a></p>
+                    <a href="http://linkedin.com/in/yawen-gu" target="_blank" class="contact-link">跳转</a>
                 </div>
             </div>
         </section>
@@ -1003,9 +1003,9 @@
                 name: '界面优化',
                 fullDescription: '负责游戏内所有界面的设计和优化，从可用性、易用性和视觉效果等多方面把控最终落地质量。',
                 prototypes: [
-                    { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式；后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式', icon: 'fa-eye', color: '#fc8c92', imgUrl: 'https://placehold.co/600x800/fc8c92/ffffff?text=HUD布局' },
-                    { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景；新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本：1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。2.新版将敌我双方桌面改为镜像，使场景布局更整洁。3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感', icon: 'fa-burst', color: '#ff8b5e', imgUrl: 'https://placehold.co/600x800/ff8b5e/ffffff?text=受击反馈' },
-                    { title: '界面合集', desc: '（点击查看完整动图）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: 'https://placehold.co/600x800/fb6b3e/ffffff?text=连击计数' },
+                    { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式；后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式', icon: 'fa-eye', color: '#fc8c92', imgUrl: './img/jiemian1.png', coverImg: './img/jiemian1.png' },
+                    { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景；新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本：1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。2.新版将敌我双方桌面改为镜像，使场景布局更整洁。3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感', icon: 'fa-burst', color: '#ff8b5e', imgUrl: './img/jiemian2.png', coverImg: './img/jiemian2.png' },
+                    { title: '界面合集', desc: '（点击查看完整动图）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: './img/jiemian3.gif', coverImg: './img/jiemian-cover3.png' },
                 ]
             },
             p5: {
@@ -1059,7 +1059,8 @@
             // 如果有图片URL则显示图片，否则显示图标
             if (proto.imgUrl) {
                 modalImage.style.backgroundImage = `url(${proto.imgUrl})`;
-                modalImage.style.backgroundSize = 'cover';
+                modalImage.style.backgroundSize = 'auto 100%';
+                modalImage.style.backgroundRepeat = 'no-repeat';
                 modalImage.style.backgroundPosition = 'center';
                 modalImage.innerHTML = ''; // 清空图标
             } else {
@@ -1109,11 +1110,25 @@
                                 ${slidesHtml}
                             </div>
                         </div>
-                        <div class="swiper-hint">
-                            <i class="fas fa-arrow-left"></i> 左右滑动查看更多 <i class="fas fa-arrow-right"></i>
-                        </div>
+                        
                     </div>
                 `;
+                // groupsHtml += `
+                //     <div class="project-group">
+                //         <div class="group-title">
+                //             <i class="fas fa-folder-open"></i> ${data.name}
+                //         </div>
+                //         <div class="group-desc">${data.fullDescription}</div>
+                //         <div class="swiper-container">
+                //             <div class="swiper-wrapper">
+                //                 ${slidesHtml}
+                //             </div>
+                //         </div>
+                //         <div class="swiper-hint">
+                //             <i class="fas fa-arrow-left"></i> 左右滑动查看更多 <i class="fas fa-arrow-right"></i>
+                //         </div>
+                //     </div>
+                // `;
             });
 
             detailPanel.innerHTML = `
