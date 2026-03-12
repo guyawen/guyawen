@@ -764,7 +764,7 @@
         } */
         .cover-img {
             width: auto;
-            height: 120%;
+            height: 100%;
         }
     </style>
 </head>
@@ -1090,8 +1090,8 @@
                     // 将p对象转为字符串属性，注意引号转义
                     slidesHtml += `
                         <div class="swiper-slide" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&apos;")})'>
-                            <div class="slide-img" style="background: ${p.color};">
-                                <img src="${p.coverImg}" class="pro-img cover-img" style="height: ${groupId === 'p1' ? '150%' : '120%'}" />
+                            <div class="slide-img" style="background: rgba(136,177,255,0.5);">
+                                <img src="${p.coverImg}" class="pro-img cover-img" />
                             </div>
                             <span>${p.title}</span>
                             <p>${p.desc}</p>
@@ -1143,6 +1143,8 @@
             detailPanel.style.display = 'block';
             detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
+        openProjectGroup('group1');
+        
 
         // ========= 视频播放控制 =========
         const video = document.getElementById('showcaseVideo');
