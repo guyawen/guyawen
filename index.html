@@ -1073,6 +1073,8 @@
             modalOverlay.style.display = 'flex';
         };
 
+        let firstOpen = true;
+
         // 打开项目组 - 修改为滑动图片布局
         window.openProjectGroup = function(groupId) {
             const projectIds = projectGroups[groupId];
@@ -1140,7 +1142,12 @@
             `;
 
             detailPanel.style.display = 'block';
-            detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (!firstOpen) {
+                detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                firstOpen = false;
+            }
+            
         };
         openProjectGroup('group1');
         
