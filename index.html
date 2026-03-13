@@ -813,7 +813,7 @@
         <div class="project-grid">
             <!-- 项目1卡片 -->
             <div class="project-card">
-                <div class="card-bg" style="background-image: linear-gradient(135deg, #5b4cb0, #a66dd4), url('https://placehold.co/600x400/6f5fef/ffffff?text=幻想森林');">
+                <div class="card-bg" style="background-image: url('./img/banner1.png');">
                     <span class="bg-label">时光之门</span>
                     <span class="bg-label">勇士竞技场</span>
                     <span class="bg-label">远征地图</span>
@@ -835,7 +835,7 @@
             </div>
             <!-- 项目2卡片 -->
             <div class="project-card">
-                <div class="card-bg" style="background-image: linear-gradient(145deg, #1a4348, #2e6b72), url('https://placehold.co/600x400/236b6b/ffffff?text=卡牌+经营');">
+                <div class="card-bg" style="background-image: url('./img/banner2.png');">
                     <span class="bg-label">组卡系统</span>
                     <span class="bg-label">养成系统</span>
                     <span class="bg-label">战斗系统</span>
@@ -993,9 +993,9 @@
                 name: '交互优化',
                 fullDescription: '负责游戏内所有系统的交互/动效设计和验收，并不断调优，致力于给玩家提供更好的体验。',
                 prototypes: [
-                    { title: '拖拽/双击移动卡牌', desc: '第二版在初版”拖拽“操作的基础上新增了”双击“操作。<br />双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。<br />拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: './img/dtcg1.png', coverImg: './img/dtcg-cover1.png' },
-                    { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。<br />第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了', icon: 'fa-cubes', color: '#fea789', imgUrl: './img/dtcg2.gif', coverImg: './img/dtcg-cover2.png' },
-                    { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负，但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止。<br />后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: './img/dtcg3.gif', coverImg: './img/dtcg-cover3.png' },
+                    { title: '拖拽/双击移动卡牌', desc: '第二版在初版”拖拽“操作的基础上新增了”双击“操作。\n双击操作既不占用查看卡牌详情的点击操作，又可以更快速地编辑卡组。\n拖拽操作虽耗时较长，但更有代入感，符合TCG老玩家的操作习惯，因此仍保留，后续不断微调以提升流畅度。', icon: 'fa-hand-pointer', color: '#b2aeff', imgUrl: './img/dtcg1.png', coverImg: './img/dtcg-cover1.png' },
+                    { title: '抽卡动画的优化思路', desc: '设计为模拟拆实体卡包的形式，沉浸感更强。\n第一版设计为纵向滑动拆包，由于卡包的高度大于宽度，整个操作流程较长（约2s），且实际在手机屏幕上操作有顿挫感，故第二版改为横向滑动，缩短流程（约1s）,操作更顺手了。', icon: 'fa-cubes', color: '#fea789', imgUrl: './img/dtcg2.gif', coverImg: './img/dtcg-cover2.png' },
+                    { title: '“先手”决定方式优化', desc: '为了提升玩家的参与感，初版设计为”猜拳“形式，赢方先攻，动画开始后每次需手动点击停止，直到分出胜负，但发现这样太容易出现人为不确定因素，且操作较冗余，故第二版改为自动停止。\n后续体验下来感觉“猜拳”形式过于拖沓幼稚，为提升游戏质感，第三版参考竞品改为“抛硬币”形式，正面先攻。', icon: 'fa-magnifying-glass', color: '#9bb9ff', imgUrl: './img/dtcg3.gif', coverImg: './img/dtcg-cover3.png' },
                     { title: '交互合集', desc: '（点击查看完整图片）', icon: 'fa-flask', color: '#7ed0b0', imgUrl: './img/dtcg4.gif', coverImg: './img/dtcg-cover4.png' },
                 ]
             },
@@ -1003,8 +1003,8 @@
                 name: '界面优化',
                 fullDescription: '负责游戏内所有界面的设计和优化，从可用性、易用性和视觉效果等多方面把控最终落地质量。',
                 prototypes: [
-                    { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式。<br />后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式', icon: 'fa-eye', color: '#fc8c92', imgUrl: './img/jiemian1.png', coverImg: './img/jiemian1.png' },
-                    { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景，新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本。<br />1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。<br />2.新版将敌我双方桌面改为镜像，使场景布局更整洁。<br />3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。<br />4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感', icon: 'fa-burst', color: '#ff8b5e', imgUrl: './img/jiemian2.png', coverImg: './img/jiemian2.png' },
+                    { title: '养成界面', desc: '初版以早期的电子宠物为灵感，将界面设计成“实体机器”样式。\n后经内部多方反馈，认为此设计过于复古小众，可能不太符合当前大多数年轻玩家的审美，因此第二版改为多数玩家更能接受的“全息影像”样式。', icon: 'fa-eye', color: '#fc8c92', imgUrl: './img/jiemian1.png', coverImg: './img/jiemian1.png' },
+                    { title: '战斗界面', desc: '最初的主要设计目的是为了更好地迎合实体卡玩家，几乎1:1还原线下打牌场景，新版设计不再拘泥于复刻，而是更多地提升了易用性和游戏性，降低新手玩家的学习成本。\n1.原先的弃牌区设计虽与场景融合度较高，但对于没接触过TCG这类游戏的玩家来说很难理解，改成牌堆形式更易理解。\n2.新版将敌我双方桌面改为镜像，使场景布局更整洁。\n3.将关联信息（回合倒计时和回合方）显示在一起，看起来更清晰便捷。\n4. 给UI加入一些拟物化的设计（如IP相关物品），增强代入感。', icon: 'fa-burst', color: '#ff8b5e', imgUrl: './img/jiemian2.png', coverImg: './img/jiemian2.png' },
                     { title: '界面合集', desc: '（点击查看完整图片）', icon: 'fa-fire', color: '#fb6b3e', imgUrl: './img/jiemian3.gif', coverImg: './img/jiemian-cover3.png' },
                 ]
             },
