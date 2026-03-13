@@ -1073,10 +1073,8 @@
             modalOverlay.style.display = 'flex';
         };
 
-        let firstOpen = true;
-
         // 打开项目组 - 修改为滑动图片布局
-        window.openProjectGroup = function(groupId) {
+        window.openProjectGroup = function(groupId, noScroll) {
             const projectIds = projectGroups[groupId];
             if (!projectIds || projectIds.length === 0) return;
 
@@ -1142,14 +1140,12 @@
             `;
 
             detailPanel.style.display = 'block';
-            if (!firstOpen) {
+            if (!noScroll) {
                 detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                firstOpen = false;
             }
             
         };
-        openProjectGroup('group1');
+        openProjectGroup('group1', true);
         
 
         // ========= 视频播放控制 =========
